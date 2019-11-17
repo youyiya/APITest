@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>wechart.qiye</groupId>
+  <artifactId>wechart</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20191117130750</lastUpdated>
+  </versioning>
+</metadata>

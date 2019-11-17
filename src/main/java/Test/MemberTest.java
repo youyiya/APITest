@@ -2,17 +2,11 @@ package Test;
 
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import io.restassured.RestAssured.*;
-import io.restassured.matcher.RestAssuredMatchers.*;
-import org.hamcrest.Matchers.*;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.equalTo;
 
 /**
  * Created by Cuiping.ma on 2019/11/16 9:59 下午
@@ -26,7 +20,7 @@ public class MemberTest {
     private static final Logger logger = LoggerFactory.getLogger(MemberTest.class);
     public static String access_token = null;
 
-    @Test
+    @Test(description = "获取token")
     public void getToken() {
         //直接使用extract提取需要的json值
         access_token = given()

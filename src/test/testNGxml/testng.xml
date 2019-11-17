@@ -4,6 +4,11 @@
     <test verbose="1" preserve-order="true" name="testDemo">
        <classes>
            <class name="Myapp"></class>
+           <class name="Test.MemberTest">
+               <methods>
+                   <include name="getToken"></include>
+               </methods>
+           </class>
        </classes>
     </test>
 </suite>
